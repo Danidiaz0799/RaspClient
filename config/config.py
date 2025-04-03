@@ -3,9 +3,7 @@ SSID = 'Stev7'  # Nombre de la red Wi-Fi
 PASSWORD = 'hola12345'  # Contrasena de la red Wi-Fi
 
 # Identificación del cliente - Debe ser único para cada dispositivo
-CLIENT_ID = 'mushroom2Test'  # Identificador único del cliente
-CLIENT_NAME = 'Marihuana'  # Nombre descriptivo
-CLIENT_DESCRIPTION = 'Cultivo principal de marihuana'  # Descripción
+CLIENT_ID = 'mushroom123'  # Identificador único del cliente
 
 # Configuracion del cliente MQTT
 SERVER = '192.168.137.214'  # IP del servidor MQTT (Raspberry Pi)
