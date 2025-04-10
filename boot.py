@@ -13,9 +13,10 @@ import threading
 
 # Función para registrar el cliente en el servidor
 def register_client(client):
-    registration_message = f"{config.CLIENT_NAME},{config.CLIENT_DESCRIPTION}"
+    # Enviar solo el CLIENT_ID para registro
+    registration_message = f"{config.CLIENT_ID}"
     client.publish(config.TOPIC_REGISTER, registration_message)
-    print(f"Cliente registrado: ID={config.CLIENT_ID}, Nombre={config.CLIENT_NAME}")
+    print(f"Cliente registrado con ID: {config.CLIENT_ID}")
 
 # Funcion de callback para manejar mensajes MQTT
 def on_message(client, userdata, message):
